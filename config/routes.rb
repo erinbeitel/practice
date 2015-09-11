@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pins
   devise_for :users
   # get 'pages/home' # this wont work anymore 
   root "pages#home" # resetting the homepage to "home" (localhost:3000 without anything after) See controllers -> pages_controller.rb for why this is possible. 
