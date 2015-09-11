@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # get 'pages/home' # this wont work anymore 
   root "pages#home" # resetting the homepage to "home" (localhost:3000 without anything after) See controllers -> pages_controller.rb for why this is possible. 
   get "about" => "pages#about" # creates about_path
